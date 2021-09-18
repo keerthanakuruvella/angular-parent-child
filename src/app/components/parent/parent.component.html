@@ -1,0 +1,7 @@
+<div>
+    Enter the Number for Square Root <input type="text"  [(ngModel)]="value"  />
+</div>
+<app-child [data] = "value" (squareroot)="getSquareRoot($event)"></app-child>
+<div>   
+    {{squarerootvalue}}
+</div>
